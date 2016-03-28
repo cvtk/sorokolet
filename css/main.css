@@ -147,16 +147,24 @@ html {
 
 /* logo block START */
 .logo, .logo:visited {
-	font-family: "Lobster", sans-serif;
-	font-size: 2.25em;
-	color: #fff;
 	line-height: 4.25rem;
 	text-decoration: none;
 }
 
-.logo__highlight {
-	font-size: 1.2em;
-	color: #ffc400;
+.logo__text {
+  font-family: "Lobster", sans-serif;
+  font-size: 2.25em;
+  color: #fff;
+}
+
+.logo__baby {
+	display: inline-block;
+  width: 2.75em;
+  height: 2.75em;
+	background-image: url("../img/baby.svg");
+  background-size: 2.75em;
+  background-repeat: no-repeat;
+  margin: 0 .1em -.75em .1em;
 }
 
 /* logo block END */
