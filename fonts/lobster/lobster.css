@@ -1,0 +1,12 @@
+@font-face {
+	font-family:'Lobster';
+	src: url('Lobster.eot');
+	src: url('Lobster.eot?#iefix') format('embedded-opentype'),
+		url('Lobster.woff') format('woff'),
+		url('Lobster.ttf') format('truetype'),
+		url('Lobster.svg#Lobster-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-0491;
+}

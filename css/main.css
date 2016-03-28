@@ -1,0 +1,223 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+header, nav, section, article, aside, footer {
+   display:block;
+}
+
+html {
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  	-webkit-box-sizing: inherit;
+  	-moz-box-sizing: inherit;
+  	box-sizing: inherit;
+
+  	text-rendering: optimizeLegibility;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+/* tricks START */
+
+.cheat-aliasing_6x {
+   text-shadow: -1px -1px 1px rgba(255,255,255,0.2),
+   1px 1px 1px rgba(255,255,255,0.2),
+   1px 1px 1px rgba(0,0,0,0.6);
+}
+
+.cheat-aliasing_4x {
+   text-shadow: -1px -1px 1px rgba(255,255,255,0.2),
+   1px 1px 1px rgba(255,255,255,0.2),
+   1px 1px 1px rgba(0,0,0,0.4);
+} 
+
+/* tricks EMD /*
+
+/* pure customize START */
+
+/* em pure-hidden values */
+
+/* pure-hidden-xs */
+@media screen and (max-width:35.438em) {
+    .pure-visible-sm{display:none}
+    .pure-visible-md{display:none}
+    .pure-visible-lg{display:none}
+    .pure-visible-xl{display:none}
+    .pure-hidden-xs{display:none}
+}
+/* pure-hidden-sm */
+@media screen and (min-width:35.5em) and (max-width:47.938em) {
+    .pure-visible-xs{display:none}
+    .pure-visible-md{display:none}
+    .pure-visible-lg{display:none}
+    .pure-visible-xl{display:none}
+    .pure-hidden-sm{display:none}
+}
+/* pure-hidden-md */
+@media screen and (min-width:48em) and (max-width:63.938em) {
+    .pure-visible-xs{display:none}
+    .pure-visible-sm{display:none}
+    .pure-visible-lg{display:none}
+    .pure-visible-xl{display:none}
+    .pure-hidden-md{display:none}
+}
+/* pure-hidden-lg */
+@media screen and (min-width:64em) and (max-width:79.938em) {
+    .pure-visible-xs{display:none}
+    .pure-visible-sm{display:none}
+    .pure-visible-md{display:none}
+    .pure-visible-xl{display:none}
+    .pure-hidden-lg{display:none}
+}
+/* pure-hidden-xl */
+@media screen and (min-width:80em) {
+    .pure-visible-xs{display:none}
+    .pure-visible-sm{display:none}
+    .pure-visible-md{display:none}
+    .pure-visible-lg{display:none}
+    .pure-hidden-xl{display:none}
+}
+
+/* pure customize END */
+
+/* header block START */
+.header {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 4.75em;
+	background-color: rgba(30, 30, 30, 0.45);
+	padding: 0 6.5em;
+}
+
+.header__logo {
+	height: 100%;
+}
+
+.header__menu {
+	height: 100%;
+	text-align: right;
+}
+
+/* header block END */
+
+
+/* title block START */
+
+.title {
+	font-family: "Oswald", sans-serif;
+	color: #222;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	line-height: 1.1em;
+	text-align: center;
+}
+
+.title_h3 {
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: .04em;
+}
+
+.title_h2 {
+	font-size: 2.5em;
+	font-weight: 400;
+}
+
+.title_h2:after {
+	display: block;
+    content: "";
+    height: .05em;
+    width: 5em;
+    background: #ffc400;
+    margin: .375em auto;
+    position: relative;
+}
+
+/* title block END */
+
+/* logo block START */
+.logo, .logo:visited {
+	font-family: "Lobster", sans-serif;
+	font-size: 2.25em;
+	color: #fff;
+	line-height: 4.25rem;
+	text-decoration: none;
+}
+
+.logo__highlight {
+	font-size: 1.2em;
+	color: #ffc400;
+}
+
+/* logo block END */
+
+/* menu block START */
+.menu {
+	height: 100%;
+	float: right;
+	overflow: hidden;
+}
+
+.menu__item {
+	display: block;
+	float: left;
+	font: normal normal 700 .9em "Open Sans", sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 4.75rem;
+	padding: 0 .85em;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.menu__item_active, .menu__item:hover {
+	color: #ffc400;
+}
+
+.menu_twitter-like > .menu__item {
+	height: 110%;
+	border-bottom: 5px solid #ffc400;
+}
+
+.menu_twitter-like > .menu__item_active, .menu__item:hover {
+	height: 100%;
+}
+/* menu block END */
+
+/* section block START */
+.section {
+	width: 100%;
+	height: 100%;
+}
+
+.section_main {
+	background-image: url("../img/bg.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* section block END */
+
+/* overlay block START */
+.overlay {
+	background-image: url(../img/overlay.png);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-repeat: repeat;
+    height: 100%;
+}
+/* overlay block END */
