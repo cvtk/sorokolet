@@ -94,6 +94,7 @@ html {
 	height: 4.75em;
 	background-color: rgba(30, 30, 30, 0.45);
 	padding: 0 6.5em;
+  z-index: 100;
 }
 
 .header__logo {
@@ -116,6 +117,7 @@ html {
 	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
+  padding-bottom: .4em;
 	line-height: 1.1em;
 	text-align: center;
 }
@@ -186,38 +188,77 @@ html {
 	color: #ffc400;
 }
 
+
 .menu_twitter-like > .menu__item {
 	height: 110%;
 	border-bottom: 5px solid #ffc400;
 }
 
-.menu_twitter-like > .menu__item_active, .menu__item:hover {
+.menu_twitter-like > .menu__item:hover{
 	height: 100%;
 }
+
+.menu_twitter-like > .menu__item_active {
+  height: 100%;
+}
+
+
+.menu_classic-style > .menu__item {
+  color: #ffc400;
+}
+
+.menu_classic-style > .menu__item:hover  {
+  color: #fff;
+  background-color: #ffc400;
+}
+
+.menu_classic-style > .menu__item_active  {
+  color: #fff;
+  background-color: #ffc400;
+}
+
 /* menu block END */
 
 /* section block START */
 .section {
+  position: relative;
 	width: 100%;
 	height: 100%;
+  padding: 4.5em 6.5em;
 }
 
-.section_main {
+.section-main {
 	background-image: url("../img/bg.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.section-main:after {
+  position: absolute;
+	content: " ";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNvyMY98AAAAXSURBVBhXYwAC3////4NoBtn///8zAAAxrAZlrnb4lgAAAABJRU5ErkJggg==');
+  background-color: rgba(0, 0, 0, 0.3);
+  background-repeat: repeat;
+  z-index: 10;
+}
+
+.section__title {
+  margin-bottom: 2.75em;
+}
+
+.section-about__text {
+  padding-right: 2em;
+}
+
+.section-about__image {
+  padding-left: 2em;
 }
 /* section block END */
-
-/* overlay block START */
-.overlay {
-	background-image: url(../img/overlay.png);
-    background-color: rgba(0, 0, 0, 0.3);
-    background-repeat: repeat;
-    height: 100%;
-}
-/* overlay block END */
