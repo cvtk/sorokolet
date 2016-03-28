@@ -1,6 +1,8 @@
 html, body {
-	width: 100%;
 	height: 100%;
+  min-width: 320px; /* suppose you want minimun width of 1000px */
+  width: auto !important;  /* Firefox will set width as auto */
+  width: 1000px;             /* As IE ignores !important it will set width as 1000px; */
 }
 
 header, nav, section, article, aside, footer {
@@ -37,9 +39,43 @@ html {
    1px 1px 1px rgba(0,0,0,0.4);
 } 
 
-/* tricks EMD /*
+/* tricks END /*
 
 /* pure customize START */
+
+.pure-g {
+    margin: 0 auto;
+  }
+
+@media screen and (max-width:35.438em) {
+  .pure-g {
+    width: 20em;
+  }
+}
+
+@media screen and (min-width:35.5em) {
+  .pure-g {
+    width: 30em;
+  }
+}
+
+@media screen and (min-width:48em) {
+  .pure-g {
+    width: 47.9375em;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .pure-g {
+    width: 62em;
+  }
+}
+
+@media screen and (min-width:80em) {
+  .pure-g {
+    width: 75em;
+  }
+}
 
 /* em pure-hidden values */
 
@@ -93,17 +129,14 @@ html {
 	width: 100%;
 	height: 4.75em;
 	background-color: rgba(30, 30, 30, 0.45);
-	padding: 0 6.5em;
   z-index: 100;
 }
 
 .header__logo {
-	height: 100%;
 }
 
 .header__menu {
-	height: 100%;
-	text-align: right;
+  height: 4.75em
 }
 
 /* header block END */
@@ -230,9 +263,8 @@ html {
 /* section block START */
 .section {
   position: relative;
-	width: 100%;
 	height: 100%;
-  padding: 4.5em 6.5em;
+  padding: 4.5em 0;
 }
 
 .section-main {
@@ -270,3 +302,10 @@ html {
   padding-left: 2em;
 }
 /* section block END */
+
+/* footer block STARt */
+  .footer {
+    background-color: #262626;
+  }
+
+/* footer block END */
