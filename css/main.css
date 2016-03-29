@@ -199,6 +199,10 @@ html {
   letter-spacing: .2em;
 }
 
+.title_invert {
+  color: #fff;
+}
+
 /* title block END */
 
 /* logo block START */
@@ -388,6 +392,23 @@ html {
 .section-about__image {
 
 }
+
+.section-facts__image {
+  z-index: -100;
+}
+
+.section-facts:after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNvyMY98AAAAXSURBVBhXYwAC3////4NoBtn///8zAAAxrAZlrnb4lgAAAABJRU5ErkJggg==');
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: repeat;
+  z-index: -1;
+}
 /* section block END */
 
 /* footer block STARt */
@@ -412,6 +433,8 @@ html {
 }
 
 .footer__social-icons {
+  width: 15em;
+  margin: 0 auto;
 }
 
 /* footer block END */
@@ -466,8 +489,6 @@ html {
 
 /* social-icons block END */
 .social-icons {
-  width: 15em;
-  margin: 0 auto;
 }
 
 .social-icons__item {
