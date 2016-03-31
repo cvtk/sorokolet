@@ -37,7 +37,18 @@ function initMap() {
     });
 }
 
-$(document).ready(function(){
+$(document).ready(function() {
+
+    $(window).scroll(function(e) {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > 500) {
+            $('.header').addClass('header_min');
+        }
+        else {
+            $('.header').removeClass('header_min');
+        }
+    });
+
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -80,7 +91,7 @@ $(document).ready(function(){
           ]
         });
     $('#sectionFacts').imageScroll({
-		holderClass: 'section section-facts',
-		imgClass: 'section-facts__image'
+		holderClass: 'facts',
+		imgClass: 'facts__image'
 	});
 });
