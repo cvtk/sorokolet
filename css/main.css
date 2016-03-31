@@ -708,8 +708,26 @@ html
 
 /* news block START */
 
+.news {
+  padding-bottom: 0;
+}
+
 .news__item {
-  padding: 0 1em;
+  padding: 0 1em 2.75em 1em;
+}
+
+.news-item__img-wrapper {
+  position: relative;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.news-item__img {
+  width: 600px;
+  max-width: 600px;
+  position: absolute;
+  left:50%;
+  margin-left: -300px; //half of the image size*/
 }
 
 .news-item__title {
@@ -737,9 +755,61 @@ html
 }
 
 .news-item__button {
-  
+  display: inline-block;
+  position: relative;
+  font: 800 .9em/1.1em "Oswald", sans-serif;
+  background-color: #ffc400;
+  color: #333;
+  text-transform: uppercase;
+  padding: .75em 2em .75em 1em;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.news-item__button:after {
+  content: "";
+  position: absolute;
+  right: .5em;
+  top: 0em;
+  width: 1.2em;
+  height: 100%;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNzkyIDc5MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNzkyIDc5MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnIGlkPSJSZWN0YW5nbGVfNV9jb3B5Ij4KCQk8Zz4KCQkJPHBvbHlnb24gcG9pbnRzPSI1ODAuODAyLDM2OS42MDQgNTgwLjgwMiwzNjkuNjA0IDIxMS4xOTgsMCAxODQuODAyLDI2LjM5NiA1NTQuNDA1LDM5NiAxODQuODAyLDc2NS42MDQgMjExLjE5OCw3OTIgICAgICA2MDcuMTk4LDM5NiAgICAiIGZpbGw9IiMzMzMzMzMiLz4KCQk8L2c+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+  background-size: 1.2em;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.news-item__button:hover {
+    background-color: #d9a701;
+    color: #fff;
+}
+
+.news-item__button:hover:after {
+  right: .25em;
 }
 /* news block END */
+
+/* partners block START */
+
+.carousel__img {
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* partners block END */
 
 /* pure customize START */
 
