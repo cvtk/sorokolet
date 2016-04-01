@@ -430,6 +430,11 @@ html
     background-repeat: repeat;
 }
 
+.parallax-window
+{
+    z-index: -100;
+}
+
 .facts__statistic
 {
 }
