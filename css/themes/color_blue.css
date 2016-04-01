@@ -1,0 +1,43 @@
+/* color_purple START */
+
+.menu__item_active,
+.menu__item:hover,
+.news-item__comments,
+.contact-item__icon,
+.contact-item__link,
+.menu_classic-style > .menu__item,
+.logo__baby
+{
+    color: #597da3;
+}
+
+.menu_twitter-like > .menu__item,
+.nav-button,
+.newsletter__email,
+.newsletter__subscribe
+{	
+	border-color: #597da3;
+}
+
+.menu_classic-style > .menu__item:hover,
+.menu_classic-style > .menu__item_active,
+.nav-button__line:before,
+.titlebar__header:after,
+.newsletter__subscribe,
+.news-item__button
+{
+    background-color: #597da3;
+}
+
+.newsletter__subscribe,
+.news-item__button
+{	
+	color: #fff;
+}
+
+.newsletter__subscribe:hover,
+.news-item__button:hover
+{	
+	background-color: #4e7199;
+}
+/* color_google-red END */
