@@ -90,8 +90,8 @@ $(document).ready(function() {
             }
           ]
         });
-    $('#sectionFacts').imageScroll({
-		holderClass: 'facts',
-		imgClass: 'facts__image'
-	});
+ //    $('#sectionFacts').imageScroll({
+	// 	holderClass: 'facts',
+	// 	imgClass: 'facts__image'
+	// });
 });

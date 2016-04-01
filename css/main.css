@@ -146,7 +146,7 @@ html
 {
     font-weight: 700;
     font-size: 1.4em;
-    line-height: 5em;
+    line-height: 4.75em;
 
     display: block;
     float: left;
@@ -410,6 +410,7 @@ html
 /* facts section START */
 
 .facts {
+    position: relative;
     padding: 8em 0 0;
 }
 
@@ -429,14 +430,8 @@ html
     background-repeat: repeat;
 }
 
-.facts__image
-{
-    z-index: -100;
-}
-
 .facts__statistic
 {
-    padding: 2em 0;
 }
 
 /** statistic block START */
@@ -444,6 +439,7 @@ html
 .statistic
 {
     text-align: center;
+    padding-bottom: 8em;
 }
 
 .statistic__number
@@ -994,8 +990,7 @@ html
     }
     .statistic
     {
-        padding-top: 2em;
-        padding-bottom: 2em;
+
     }
     .statistic__number
     {
@@ -1039,7 +1034,7 @@ html
     }
     .statistic__number
     {
-        font-size: 8em;
+        font-size: 6em;
     }
     .statistic__text
     {
@@ -1052,6 +1047,14 @@ html
     .pure-g
     {
         width: 99.2em;
+    }
+    .statistic__number
+    {
+        font-size: 8em;
+    }
+    .statistic__text
+    {
+        font-size: 2.4em;
     }
 }
 
