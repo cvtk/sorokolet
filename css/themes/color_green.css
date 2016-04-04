@@ -24,7 +24,8 @@
 .nav-button__line:before,
 .titlebar__header:after,
 .newsletter__subscribe,
-.news-item__button
+.news-item__button,
+.settings__button
 {
     background-color: #8cc052;
 }
@@ -36,7 +37,8 @@
 }
 
 .newsletter__subscribe:hover,
-.news-item__button:hover
+.news-item__button:hover,
+.settings__button:hover
 {
 	background-color: #739f43;
 	color: #fff;

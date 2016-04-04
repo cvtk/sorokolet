@@ -90,8 +90,18 @@ $(document).ready(function() {
             }
           ]
         });
- //    $('#sectionFacts').imageScroll({
-	// 	holderClass: 'facts',
-	// 	imgClass: 'facts__image'
-	// });
+    $('.settings__color-picker').click(function() {
+        $('link[data-color]').prop('disabled', true);
+        $('link[data-color=' + $(this).data('color') +']').prop('disabled', false);
+        
+    });
+    $('#settingsButton').click(function() {
+        var $ettings = $('#settings');
+        if ($ettings.data('show')) {
+            $ettings.addClass('settings_hided').data('show', false);
+        }
+        else {
+            $ettings.removeClass('settings_hided').data('show', true);
+        }
+    });
 });
