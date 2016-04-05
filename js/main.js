@@ -91,9 +91,8 @@ $(document).ready(function() {
           ]
         });
     $('.settings__color-picker').click(function() {
-        $('link[data-color]').prop('disabled', true);
-        $('link[data-color=' + $(this).data('color') +']').prop('disabled', false);
-        
+        $("link#theme").attr("href",$(this).attr('rel'));
+        return false;
     });
     $('#settingsButton').click(function() {
         var $ettings = $('#settings');

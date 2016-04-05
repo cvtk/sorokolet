@@ -27,6 +27,10 @@ font-style: normal;
 .flaticon-arrow-right:before { content: "\f101"; }
 .flaticon-baby:before { content: "\f102"; }
 .flaticon-clock:before { content: "\f103"; }
-.flaticon-location:before { content: "\f104"; }
-.flaticon-mail:before { content: "\f105"; }
-.flaticon-phone:before { content: "\f106"; }
+.flaticon-cogwheel:before { content: "\f104"; }
+.flaticon-internet:before { content: "\f105"; }
+.flaticon-location:before { content: "\f106"; }
+.flaticon-mail:before { content: "\f107"; }
+.flaticon-paper:before { content: "\f108"; }
+.flaticon-phone:before { content: "\f109"; }
+.flaticon-social:before { content: "\f10a"; }
