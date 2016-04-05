@@ -40,6 +40,21 @@ function initMap() {
 $(document).ready(function() {
 
     $(window).scroll(function(e) {
+
+        var scrollPos = $(document).scrollTop();
+        $('nav.menu a.menu__item').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos + 100 && refElement.position().top + refElement.height() + 9999 > scrollPos) {
+                $('nav.menu a.menu__item').removeClass("menu__item_active");
+                currLink.addClass("menu__item_active");
+            }
+            else
+            {
+                currLink.removeClass("menu__item_active");
+            }
+        });
+
         var scrollTop = $(window).scrollTop();
         if (scrollTop > 500) {
             $('.header').addClass('header_min');

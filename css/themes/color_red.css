@@ -6,7 +6,8 @@
 .contact-item__icon,
 .contact-item__link,
 .menu_classic-style > .menu__item,
-.logo__baby
+.logo__baby,
+.intro__subtitle
 {
     color: #ed6f61;
 }
@@ -25,20 +26,23 @@
 .titlebar__header:after,
 .newsletter__subscribe,
 .news-item__button,
-.settings__button
+.settings__button,
+.intro__more-button
 {
     background-color: #ed6f61;
 }
 
 .newsletter__subscribe,
-.news-item__button
+.news-item__button,
+.intro__more-button
 {	
 	color: #fff;
 }
 
 .newsletter__subscribe:hover,
 .news-item__button:hover,
-.settings__button:hover
+.settings__button:hover,
+.intro__more-button:hover
 {	
 	background-color: #cc5f53;
 }
