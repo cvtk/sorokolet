@@ -480,7 +480,7 @@ html
 
     background-image: url('../img/bg.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 75%;
     background-size: cover;
 }
 
