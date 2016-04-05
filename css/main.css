@@ -475,8 +475,7 @@ html
 .main
 {
     z-index: -2;
-
-    height: 100%;
+    position: relative;
     padding: 16em 0;
 
     background-image: url('../img/bg.jpg');
@@ -1214,6 +1213,12 @@ html
     {
         font-size: 2.5em;
     }
+    .intro__title {
+        font-size: 3em;
+    }
+    .intro__subtitle {
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (min-width:35.5em)
@@ -1232,6 +1237,12 @@ html
     }
     .statistic__text
     {
+        font-size: 2em;
+    }
+        .intro__title {
+        font-size: 4em;
+    }
+    .intro__subtitle {
         font-size: 2em;
     }
 }
@@ -1253,6 +1264,12 @@ html
     .statistic__text
     {
         font-size: 2.4em;
+    }
+    .intro__title {
+        font-size: 4em;
+    }
+    .intro__subtitle {
+        font-size: 2.5em;
     }
 }
 
@@ -1277,6 +1294,12 @@ html
     .pure-g
     {
         width: 120em;
+    }
+    .intro__title {
+        font-size: 7em;
+    }
+    .intro__subtitle {
+        font-size: 3em;
     }
 }
 
