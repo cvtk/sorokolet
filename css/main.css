@@ -474,7 +474,7 @@ html
 
 .main
 {
-    z-index: -2;
+    z-index: 0;
     position: relative;
     padding: 16em 0;
 
