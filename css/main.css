@@ -43,6 +43,44 @@ html
     outline: none;
 }
 
+/* lte-ie-8 block START */
+
+.lte-ie-8 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: #fff;
+    padding: 5em;
+}
+
+.titlebar_lte-ie-8 {
+    margin-bottom: 4.5em;
+}
+
+.lte-ie-8__img {
+    float: left;
+    width: 40em;
+    height: auto;
+    padding: 3em;
+}
+
+.lte-ie-8__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    color: #222;
+    font-weight: 300;
+}
+
+.lte-ie-8__browser-img {
+    width: 12em;
+    height: auto;
+    padding-right: 2em;
+}
+
+/* lte-ie-8 block END */
 
 /* header section START */
 .header
